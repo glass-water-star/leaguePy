@@ -1,2 +1,2 @@
 # leaguePy
-Simple m,odule client for interfacing
+Simple module client for interfacing
