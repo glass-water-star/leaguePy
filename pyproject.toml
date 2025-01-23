@@ -1,0 +1,32 @@
+[project]
+name = "leaguepy"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "black>=24.10.0",
+    "crypto>=1.4.1",
+    "isort>=5.13.2",
+    "pydantic>=2.10.4",
+    "pyjwt>=2.10.1",
+    "pytest-cov>=6.0.0",
+    "pytest>=8.3.4",
+    "requests>=2.32.3",
+    "ruff>=0.8.6",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build]
+include = ["src/leaguepy"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/leaguepy"]
+
+[tool.pytest.ini_options]
+pythonpath = [
+  "src"
+]
